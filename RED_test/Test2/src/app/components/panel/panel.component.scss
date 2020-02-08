@@ -1,0 +1,33 @@
+$idColor: orange;
+$borderColor: black;
+$backgroundColor: #ffffcf;
+$contentColor: blue;
+
+:host {
+  background-color: $backgroundColor;
+  border: 1px solid $borderColor;
+  border-radius: 1%;
+  height: 500px;
+  width: 300px;
+  position: fixed;
+  top: 20px;
+  right: 1px;
+  .close-button {
+    text-align: right;
+    font-size: 20px;
+    span {
+      cursor: pointer;
+    }
+  }
+  > div {
+    text-align: center;
+    &.square-id {
+      color: $idColor;
+      font-weight: bold;
+    }
+    &.content-body {
+      color: $contentColor;
+      margin: 16px 0;
+    }
+  }
+}

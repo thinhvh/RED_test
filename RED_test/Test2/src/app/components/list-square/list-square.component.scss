@@ -1,0 +1,20 @@
+:host {
+  .square-wrapper {
+    width: 100%;
+    display: grid;
+    grid-gap: 8px 8px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 100px;
+  }
+  .load-more {
+    text-align: center;
+    margin: 16px;
+    & > button {
+      height: 40px;
+      width: 100px;
+      border-radius: 10px;
+      cursor: pointer;
+      outline: none;
+    }
+  }
+}

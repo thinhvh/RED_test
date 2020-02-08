@@ -1,0 +1,20 @@
+$squareColor: red;
+
+:host {
+  border-radius: 10px;
+  border: 1px solid $squareColor;
+  .square {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    .square-id {
+      color: $squareColor;
+    }
+    .clicked-times {
+      font-weight: bold;
+    }
+  }
+}

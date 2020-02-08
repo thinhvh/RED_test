@@ -1,0 +1,13 @@
+<div class="square-wrapper">
+  <ng-container *ngFor="let square of displaySquares | sortBy : 'clickTimes'">
+    <app-square [square]="square" [backgroundColor]="square.backgroundColor"></app-square>
+  </ng-container>
+</div>
+<div
+  *ngIf="displaySquares.length < squares.length"
+  class="load-more"
+>
+  <button (click)="loadMore()">
+    Load more
+  </button>
+</div>
